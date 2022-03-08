@@ -30,7 +30,7 @@ body {
   justify-content: end;
 }
 
-.lower-container {
+.Home {
   border: 1px solid red;
   width: 50%;
   display: flex;
@@ -38,6 +38,6 @@ body {
   margin-left: 50%;
 }
 
-.lower-container p {
+.Home p {
   text-align: center;
 }

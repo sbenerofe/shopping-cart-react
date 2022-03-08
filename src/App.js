@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Home } from './components/Home';
 import { Navbar } from './components/Navbar';
 
 import './App.css';
@@ -16,9 +17,7 @@ const App = () => {
         </div>
       </div>
       <div className='lower-container'>
-        <p>Welcome to the Poké Mart!</p>
-        <p>May I help you?</p>
-        <button>BUY</button>
+        <Home/>
       </div>
     </div>
   );
