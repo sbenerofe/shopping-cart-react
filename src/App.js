@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Home } from './components/Home';
 import { Navbar } from './components/Navbar';
+import { Shop } from './components/Shop';
 
 import './App.css';
 
@@ -17,7 +18,8 @@ const App = () => {
         </div>
       </div>
       <div className='lower-container'>
-        <Home/>
+        {/*<Home/>*/}
+        <Shop/>
       </div>
     </div>
   );

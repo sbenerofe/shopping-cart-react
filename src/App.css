@@ -41,3 +41,48 @@ body {
 .Home p {
   text-align: center;
 }
+
+.Shop {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+}
+
+.Shop .items-container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat( 4, 1fr );
+  grid-template-rows: repeat( 5, 1fr );
+  margin-top: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gold;
+}
+
+.item img {
+  align-self: center;
+  border: 1px solid red;
+  height: 100px;
+}
+
+.item p {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.item .input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.item .input-container input,
+.item .input-container button {
+  width: 50%;
+}

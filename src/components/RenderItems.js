@@ -2,7 +2,7 @@ import React from 'react';
 
 const RenderItems = ( props ) => {
   return (
-    <div>
+    <div className='items-container'>
       { props.array.map((item) => {
         return item;
       })}
