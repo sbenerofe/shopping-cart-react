@@ -6,6 +6,10 @@ body {
   background-size: cover;
 }
 
+button {
+  cursor: pointer;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -85,4 +89,8 @@ body {
 .item .input-container input,
 .item .input-container button {
   width: 50%;
+}
+
+.item .input-container input {
+  text-indent: 10px;
 }

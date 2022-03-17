@@ -8,7 +8,7 @@ const Item = ( props ) => {
       <p>{ props.name }</p>
       <p>円 { props.price }</p>
       <div className='input-container'>
-        <input type='number' value='1' onChange={ props.quantityChg }/>
+        <input type='number' id={ props.itemID } defaultValue={ 1 }/>
         <button onClick={ props.func }>ADD TO CART</button>
       </div>
     </div>
