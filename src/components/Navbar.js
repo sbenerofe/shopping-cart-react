@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = ( props ) => {
   return (
-    <button onClick={ props.function }>{ props.text }</button>
+    <button onClick={ props.func }>{ props.text }</button>
   );
 };
 

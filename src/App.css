@@ -80,17 +80,17 @@ button {
   margin-bottom: 0;
 }
 
-.item .input-container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
 
-.item .input-container input,
-.item .input-container button {
-  width: 50%;
-}
-
-.item .input-container input {
-  text-indent: 10px;
+/* below is styling for cart section of the app */
+.Cart {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: silver;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
 }
