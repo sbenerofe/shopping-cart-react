@@ -1,25 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const CartItem = ( props ) => {
-
-  const incrementItem = () => {
-    props.setItemCount( props.itemCount + 1 );
-  };
-
-  const decrementItem =() => {
-    props.setItemCount( props.itemCount - 1 );
-  };
+  const { item, addItem, removeItem } = props;
 
   return (
     <div className='CartItem'>
-      <img src={ props.icon } alt={ props.name } />
+      <div className='img-container'>
+        <img src={ item.icon } alt={ item.name } />
+      </div>
       <div className='item-details'>
-        <p>{ props.name }</p>
-        <p>円 {( props.price * props.itemCount )}</p>
+        <p>{ item.name }</p>
+        <p>円 { (item.price * item.quantity ) }</p>
         <div className='quantity-container'>
-          <button onClick={ decrementItem }>-</button>
-          <div>{ props.itemCount }</div>
-          <button onClick={ incrementItem } >+</button>
+          <button onClick={ () => { removeItem( item ) } } >-</button>
+          <div>{ item.quantity }</div>
+          <button onClick={ () => { addItem( item ) } }>+</button>
         </div>
       </div>
     </div>

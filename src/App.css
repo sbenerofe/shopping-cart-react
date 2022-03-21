@@ -1,9 +1,7 @@
+@import url( 'https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap' );
+
 body {
-  background: url( ./assets/PokeMART.jpg ) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: gray;
 }
 
 button {
@@ -16,36 +14,95 @@ button {
 }
 
 .upper-container {
-  border: 1px solid red;
   width: 100%;
   display: flex;
   flex-direction: row;
+  border-bottom: 5px solid black;
 }
 
 .upper-container h1 {
   text-indent: 10px;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 40px;
 }
 
+/* styling for navbar */
 .navbar-container {
-  border: 1px solid gold;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: end;
+  margin-top: 30px;
 }
 
+.navbar-container .Navbar button {
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 25px;
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.navbar-container .Navbar button:hover {
+  outline: 1px solid black;
+  background-color: silver;
+  color: black;
+  transition: 0.3s;
+}
+
+/* styling for Home component */
 .Home {
-  border: 1px solid red;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.Home img {
+  width: 50%;
+}
+
+.Home .greetings {
   width: 50%;
   display: flex;
   flex-direction: column;
-  margin-left: 50%;
+  margin-top: 10%;
 }
 
-.Home p {
+.Home .greetings  p {
   text-align: center;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
+.Home .greetings button {
+  width: 30%;
+  border: none;
+  border-radius: 5px;
+  background-color: green;
+  outline: 1px solid silver;
+  font-size: 25px;
+  font-family: 'Gochi Hand', cursive;
+  align-self: center;
+  color: silver;
+}
+
+.Home .greetings button:hover {
+  background-color: silver;
+  outline: 1px solid green;
+  color: green;
+  transition: 0.3s;
+}
+
+/* styling for Shop component */
 .Shop {
   width: 100%;
   height: 100%;
@@ -56,30 +113,51 @@ button {
 
 .Shop .items-container {
   width: 80%;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat( 4, 1fr );
-  grid-template-rows: repeat( 5, 1fr );
+  grid-template-rows: repeat( 2, 1fr );
   margin-top: 20px;
 }
 
 .item {
   display: flex;
   flex-direction: column;
-  border: 1px solid gold;
+  margin-bottom: 50px;
 }
 
 .item img {
   align-self: center;
-  border: 1px solid red;
   height: 100px;
 }
 
 .item p {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 25px;
   text-align: center;
   margin-top: 5px;
   margin-bottom: 0;
 }
 
+.item button {
+  border: none;
+  border-radius: 5px;
+  width: 50%;
+  align-self: center;
+  padding: 5px;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 18px;
+  background-color: green;
+  color: silver;
+  outline: 1px solid silver;
+}
+
+.item button:hover {
+  background-color: silver;
+  outline: 1px solid green;
+  color: green;
+  transition: 0.3s;
+}
 
 /* below is styling for cart section of the app */
 .Cart {
@@ -93,4 +171,93 @@ button {
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+}
+
+.Cart h1 {
+  width: 90%;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 40px;
+  text-align: center;
+  border-bottom: 5px solid black;
+  align-self: center;
+}
+
+.Cart .cartItems-container {
+  width: 90%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: 3px solid black;
+  border-radius: 20px;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.Cart button {
+  width: 50%;
+  align-self: center;
+  margin-bottom: 10px;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.Cart button:hover {
+  outline: 1px solid black;
+  background-color: whitesmoke;
+  transition: 0.3s;
+}
+
+/* styling for cart items */
+.CartItem {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.CartItem .img-container {
+  width: 100px;
+}
+
+.CartItem .item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.CartItem .item-details p {
+  margin: 0;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 25px;
+}
+
+.CartItem .quantity-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.CartItem .quantity-container div {
+  width: 50%;
+  text-align: center;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 20px;
+}
+
+.CartItem .quantity-container button {
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: transparent;
+}
+
+.CartItem .quantity-container button:hover {
+  outline: 1px solid black;
 }

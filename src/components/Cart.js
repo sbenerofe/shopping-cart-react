@@ -1,20 +1,20 @@
 import React from 'react';
-import uniqid from 'uniqid';
 
 import { CartItem } from './CartItem';
 
 const Cart = ( props ) => {
+  const { cartItems, addItem, removeItem, buyBye, closeCart } = props;
+
   return (
     <div className='Cart' id='myCart'>
       <h1>YOUR SHOPPING CART</h1>
       <div className='cartItems-container'>
-        { props.array.map((item) => {
-          return item;
+        { cartItems.map((item) => {
+          return <CartItem item={ item } addItem={ addItem } removeItem={ removeItem } />;
         })}
       </div>
-      <p>TOTAL: 円</p>
-      <button>BUY</button>
-      <button onClick={ props.openFunc }>CLOSE</button>
+      <button onClick={ buyBye }>BUY</button>
+      <button onClick={ closeCart }>CLOSE</button>
     </div>
   );
 };
