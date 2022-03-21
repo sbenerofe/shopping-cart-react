@@ -65,15 +65,15 @@ const App = () => {
       <div className='upper-container'>
         <h1>PokéMART</h1>
         <div className='navbar-container'>
-          <Navbar text={ 'HOME' } func={ () => { navigate('/pokemart-react/') } } />
+          <Navbar text={ 'HOME' } func={ () => { navigate('/pokemart-react') } } />
           <Navbar text={ 'SHOP' } func={ () => { navigate( 'pokemart-react/shop' ) } } />
           <Navbar text={ `CART(${ cartItems.length })` } func={ openCart } />
         </div>
       </div>
       <div className='lower-container'>
         <Routes>
-          <Route path='/' element={ <Home/> } ></Route>
-          <Route path='/shop' element={ <Shop addItem={ addItem } catalog={ catalog } /> } ></Route>
+          <Route path='/pokemart-react' element={ <Home/> } ></Route>
+          <Route path='/pokemart-react/shop' element={ <Shop addItem={ addItem } catalog={ catalog } /> } ></Route>
         </Routes>
       </div>
     </div>
