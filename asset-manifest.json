@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/pokemart-react/static/css/main.aea42f35.css",
+    "main.js": "/pokemart-react/static/js/main.ed5f52cc.js",
+    "static/media/pokeMART.jpg": "/pokemart-react/static/media/pokeMART.e1a39fa793c89cd31402.jpg",
+    "static/media/escapeRope.webp": "/pokemart-react/static/media/escapeRope.f3103cac0a660e18aef5.webp",
+    "static/media/ultraBall.webp": "/pokemart-react/static/media/ultraBall.06f446b4cd7745a64933.webp",
+    "static/media/pokeBall.webp": "/pokemart-react/static/media/pokeBall.c353367882e240f8e26d.webp",
+    "static/media/superRepel.webp": "/pokemart-react/static/media/superRepel.c78bc29a0ae019e67229.webp",
+    "static/media/fullHeal.webp": "/pokemart-react/static/media/fullHeal.f39fef77f65a4ca8f6da.webp",
+    "static/media/revive.webp": "/pokemart-react/static/media/revive.ba55a00510d4599a3075.webp",
+    "index.html": "/pokemart-react/index.html",
+    "main.aea42f35.css.map": "/pokemart-react/static/css/main.aea42f35.css.map",
+    "main.ed5f52cc.js.map": "/pokemart-react/static/js/main.ed5f52cc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aea42f35.css",
+    "static/js/main.ed5f52cc.js"
+  ]
+}
