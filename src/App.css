@@ -1,4 +1,4 @@
-@import url( 'https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap' );
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
 body {
   background-color: gray;
@@ -20,6 +20,9 @@ button {
   border-bottom: 5px solid black;
 }
 
+h1 {
+  margin: 0px !important;
+}
 .upper-container h1 {
   text-indent: 10px;
   font-family: 'Gochi Hand', cursive;
@@ -75,7 +78,7 @@ button {
   margin-top: 10%;
 }
 
-.Home .greetings  p {
+.Home .greetings p {
   text-align: center;
   font-family: 'Gochi Hand', cursive;
   font-size: 30px;
@@ -115,8 +118,8 @@ button {
   width: 80%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat( 4, 1fr );
-  grid-template-rows: repeat( 2, 1fr );
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   margin-top: 20px;
 }
 

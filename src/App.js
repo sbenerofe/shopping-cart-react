@@ -75,7 +75,7 @@ const App = () => {
         closeCart={closeCart}
       />
       <div className='upper-container'>
-        <h1>PokéMART</h1>
+        <h1>Town_Values_Store</h1>
         <div className='navbar-container'>
           <Navbar
             text={'HOME'}
